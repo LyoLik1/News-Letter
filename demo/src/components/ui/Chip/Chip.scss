@@ -1,0 +1,36 @@
+.sources {
+  height: 300px !important;
+  width: 100% !important;
+  display: flex !important;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center !important;
+  align-items: center !important;
+  @media (max-width: 530px) {
+    width: 100% !important;
+  }
+}
+.avatar {
+  width: 100% !important;
+  height: 100px !important;
+  @media (max-width: 767px) {
+    width: 70px !important;
+    height: 70px !important;
+  }
+  & svg,
+  img {
+    width: 100px !important;
+    height: 100px !important;
+    @media (max-width: 767px) {
+      width: 70px !important;
+      height: 70px !important;
+    }
+  }
+}
+
+.label {
+  @media (max-width: 480px) {
+    white-space: pre-wrap !important;
+  }
+}

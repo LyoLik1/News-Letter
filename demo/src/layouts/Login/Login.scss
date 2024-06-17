@@ -1,0 +1,34 @@
+.login{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75dvh;
+  &-block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    &_text{
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 30.5px;
+      letter-spacing: 3.5px;
+      text-transform:uppercase;
+      margin-bottom: 40px;
+    }
+    &_form{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+      margin: 20px 0;
+    }
+    &_chips{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+    }
+  }
+}

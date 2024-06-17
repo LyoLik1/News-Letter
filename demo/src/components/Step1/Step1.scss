@@ -1,0 +1,125 @@
+.step1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  height: 94dvh;
+  width: 100%;
+  position: relative;
+  @media (max-width: 480px) {
+    padding: 0 5px;
+    justify-content: start;
+    width: 100%;
+    gap: 10px;
+  }
+
+  &-title {
+    font-size: 25px;
+    line-height: 30.5px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+    @media (max-width: 480px) {
+      margin-bottom: 0px;
+      text-align: center;
+      margin-top: 40px;
+    }
+  }
+  &-no-sources {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    justify-content: center;
+    padding: 0 !important;
+  }
+
+  &-chips {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    height: 60dvh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 0 15px;
+    width: 100%;
+    @media (max-width: 1400px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 767px) {
+      gap: 20px;
+      height: 65dvh;
+    }
+    @media (max-width: 480px) {
+      gap: 10px;
+      padding: 0 5px;
+      height: 100%;
+      margin-bottom: 5px;
+    }
+
+    &-wrapper {
+      width: 80%;
+
+      @media (max-width: 1024px) {
+        width: 90%;
+      }
+
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+
+      @media (max-width: 480px) {
+        width: 100%;
+        padding: 0 5px 0 5px;
+        height: 65%;
+      }
+    }
+  }
+
+  &-count {
+    font-size: 14px;
+    line-height: 36px;
+    font-weight: 500;
+    letter-spacing: 1.25px;
+    margin-bottom: 0;
+  }
+  &-link {
+    color: black;
+    font-family: "Montserrat";
+    font-size: 12px;
+    line-height: 14.5px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: underline;
+    letter-spacing: 2px;
+    margin-top: 50px;
+  }
+}
+
+.ready-button {
+  margin-top: 10px !important;
+  width: 130px !important;
+  height: 50px !important;
+  @media (max-width: 1024px) {
+    margin-bottom: 10px !important;
+  }
+  @media (max-width: 480px) {
+    position: absolute !important;
+    width: 110px !important;
+    height: 45px !important;
+    bottom: 10px;
+  }
+}
+
+.search-input {
+  margin: 0 !important;
+  @media (max-width: 480px) {
+    width: 90% !important;
+  }
+}
+
+.no-sources-message {
+  width: 100%;
+  color: red;
+  text-align: center;
+}

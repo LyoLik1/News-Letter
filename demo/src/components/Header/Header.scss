@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 15px 15px;
+
+
+
+  &-faq {
+    position: absolute;
+    cursor: pointer;
+    right: 15px;
+    top: 20px;
+  }
+}

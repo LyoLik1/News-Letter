@@ -1,0 +1,53 @@
+.page{
+ &-content{
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+}
+.homePath {
+  background-image: url('../../assets/home-img.svg');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 200px;
+  background-size: 80%;
+}
+.faqPath{
+  background-image: url('../../assets/faq-img.svg');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 200px;
+  background-size: 80%;
+}
+.sourcesPath{
+  background-image: url('../../assets/step1-img.svg');
+  background-repeat: no-repeat;
+  background-position-x:right;
+  background-size: 80%;
+  @media (max-width:1024px) {
+    background-position-y: bottom;
+    background-size: 100%;
+  }
+}
+.timePath{
+  background-image: url('../../assets/step2-img.svg');
+  background-repeat: no-repeat;
+  background-position-y:center;
+  background-position-x: right;
+  background-size: 70%;
+  @media (max-width:1154px) {
+    background-size: 100%;
+    background-position-y: bottom;
+  }
+}
+.targetPath{
+  background-image: url('../../assets/step3-img.svg');
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+  background-size: 70%;
+  @media (max-width:1154px) {
+    background-size: 100%;
+  }
+}
